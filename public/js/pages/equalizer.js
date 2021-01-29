@@ -34,7 +34,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         el.classList.add('box1')
         el.innerText = counter;
         el.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
-        el. style.color = `rgb(${255-red}, ${255-green}, ${255-blue})`;
+        el. style.color = `rgb(${255-red}, ${255-green}, ${200})`;
         //el.style.backgroundColor = 'white';
         buttonList.push(el);
         (red > 0) ? red : factor = - factor;
