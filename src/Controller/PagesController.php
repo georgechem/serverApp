@@ -13,10 +13,11 @@ class PagesController extends AbstractController
      */
     public function index(): Response
     {
-        return new Response("<p style=\"margin: 200px auto;text-align:center;color: #ff0000;font-size:16rem;font-weight: bolder;\">404</p>");
+        //return new Response("<p style=\"margin: 200px auto;text-align:center;color: #ff0000;font-size:16rem;
+        //font-weight: bolder;\">404</p>");
 
         return $this->render('pages/index.html.twig', [
-            'controller_name' => 'PagesController',
+
         ]);
     }
 }
