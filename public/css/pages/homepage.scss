@@ -1,8 +1,23 @@
 body {
   background-color: #AAAAAA;
+  margin: 0 auto;
 }
 
-#homepage_redo1{
-  margin: 100px auto;
-  color: green;
+#mug03{
+  font-size: 40rem;
+  position: fixed;
+  //color: green;
+  z-index: -150;
+
+}
+#mug02{
+  margin-top: 45px;
+  margin-left: 5px;
+  font-size: 35rem;
+  position: fixed;
+  z-index: 0;
+}
+
+#coffee{
+  //font-size: 40rem;
 }
