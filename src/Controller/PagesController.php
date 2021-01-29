@@ -21,4 +21,12 @@ class PagesController extends AbstractController
 
         ]);
     }
+
+    /**
+     * @Route("/equalizer", name="app_equalizer")
+     */
+    public function equalizer():Response
+    {
+        return $this->render('pages/equalizer.html.twig', []);
+    }
 }
