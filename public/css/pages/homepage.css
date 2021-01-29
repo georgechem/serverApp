@@ -1,6 +1,6 @@
 body {
   background-color: #AAAAAA;
-  margin: 0 auto; }
+  max-width: 960px; }
 
 #mug03 {
   font-size: 40rem;
@@ -13,5 +13,8 @@ body {
   font-size: 35rem;
   position: fixed;
   z-index: 0; }
+
+#coffee {
+  position: 33%; }
 
 /*# sourceMappingURL=homepage.css.map */
