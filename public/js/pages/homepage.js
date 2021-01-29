@@ -9,13 +9,13 @@ window.addEventListener('DOMContentLoaded', (event) => {
         console.log(rot);
         rot = rot + (2*factor);
         homepage_redo1.style.transform = `rotate(${rot}deg)`;
-        homepage_redo1.style.color = `rgb(${rot},${rot/2},${rot/2})`;
-        homepage_redo1.style.fontSize = `${rot/3}px`;
+        homepage_redo1.style.color = `rgb(${rot/4},${rot/3},${rot})`;
+        homepage_redo1.style.fontSize = `${rot/4}px`;
         homepage_redo1.style.marginTop = `${rot}px`;
         if (rot > 358 || rot < 0){
             //rot = 0;
             (factor === 1) ? factor = -1 : factor = 1;
-            //clearInterval(id);
+            clearInterval(id);
         }
     }
 });
