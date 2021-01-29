@@ -8,10 +8,11 @@ body {
   flex-wrap: wrap; }
 
 .box1 {
+  text-align: center;
   border: 3px groove #396a7a;
   border-radius: 15px;
   font-size: 2rem;
   padding: 15px;
   margin: 5px; }
 
-/*# sourceMappingURL=equalizer.css.map */
+/*# sourceMappingURL=prime_numbers.css.map */

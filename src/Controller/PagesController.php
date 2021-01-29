@@ -16,17 +16,25 @@ class PagesController extends AbstractController
         //return new Response("<p style=\"margin: 200px auto;text-align:center;color: #ff0000;font-size:16rem;
         //font-weight: bolder;\">404</p>");
 
+        $menu['links'] = [
+            'apn' => [
+                'no' => 'No. 1',
+                'title'=>'Prime Numbers'
+            ]
+        ];
 
         return $this->render('pages/index.html.twig', [
-
+            'links' => $menu['links'],
         ]);
     }
 
     /**
-     * @Route("/equalizer", name="app_equalizer")
+     * @Route("/prime_numbers", name="app_prime_numbers")
      */
     public function equalizer():Response
     {
-        return $this->render('pages/equalizer.html.twig', []);
+        return $this->render('pages/prime_numbers.html.twig', [
+
+        ]);
     }
 }

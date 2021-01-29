@@ -10,7 +10,11 @@
     <div id="coffee">
 
     </div>
-
+    {% if true %}
+    <nav class="nav">
+        <a class="nav__link" href="{{ path('app_prime_numbers') }}">{{ links.apn.no }}.{{ links.apn.title }}</a>
+    </nav>
+    {% endif %}
 
 {% endblock %}
 {% block javascripts %}

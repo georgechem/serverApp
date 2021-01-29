@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,IAAK;EACH,gBAAgB,EAAE,OAAO;;AAG3B,eAAgB;EACd,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;EACnB,WAAW,EAAE,OAAO;EACpB,SAAS,EAAE,IAAI;;AAGjB,KAAK;EACH,UAAU,EAAE,MAAM;EAClB,MAAM,EAAE,kBAAkB;EAC1B,aAAa,EAAE,IAAI;EACnB,SAAS,EAAE,IAAI;EACf,OAAO,EAAE,IAAI;EACb,MAAM,EAAE,GAAG",
+"sources": ["prime_numbers.scss"],
+"names": [],
+"file": "prime_numbers.css"
+}
