@@ -11,7 +11,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
         homepage_redo1.style.transform = `rotate(${rot}deg)`;
         homepage_redo1.style.color = `rgb(${rot},${rot/2},${rot/2})`;
         homepage_redo1.style.fontSize = `${rot/3}px`;
-        if (rot > 355 || rot < 0){
+        homepage_redo1.style.marginTop = `${rot}px`;
+        if (rot > 358 || rot < 0){
             //rot = 0;
             (factor === 1) ? factor = -1 : factor = 1;
             //clearInterval(id);
