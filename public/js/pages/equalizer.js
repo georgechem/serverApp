@@ -46,7 +46,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
             equalizer.appendChild(el);
         }
 
-        if (counter > 5000){
+        if (counter > 50000){
             clearInterval(generate_bar);
         }
 
