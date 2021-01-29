@@ -10,6 +10,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     mug02.setAttribute('class', 'fas fa-mug-hot')
     mug02.setAttribute('id', 'mug02');
+
     function frame(el){
 
         rot = rot + 3;

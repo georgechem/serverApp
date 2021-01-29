@@ -1,0 +1,19 @@
+body {
+  background-color: #396a7a;
+}
+
+.equalizerClass {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  flex-wrap: wrap;
+
+}
+.box1{
+  border: 3px double burlywood;
+  border-radius: 15px;
+  font-size: 2rem;
+  padding: 5px;
+  margin: 5px;
+
+}

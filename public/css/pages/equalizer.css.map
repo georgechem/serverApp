@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAAA,IAAK;EACH,gBAAgB,EAAE,OAAO;;AAG3B,eAAgB;EACd,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;EACnB,WAAW,EAAE,OAAO;EACpB,SAAS,EAAE,IAAI;;AAGjB,KAAK;EACH,MAAM,EAAE,oBAAoB;EAC5B,aAAa,EAAE,IAAI;EACnB,SAAS,EAAE,IAAI;EACf,OAAO,EAAE,GAAG;EACZ,MAAM,EAAE,GAAG",
+"sources": ["equalizer.scss"],
 "names": [],
 "file": "equalizer.css"
 }
