@@ -3,11 +3,15 @@
 {% block title %}Hello PagesController!{% endblock %}
 {% block stylesheets %}
 {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/pages/homepage.css') }}">
 {% endblock %}
 {% block body %}
 
-    <p>test</p>
+
+    <i id="homepage_redo1" class="fas fa-redo fa-3x">ON HOLIDAYS</i>
+
 {% endblock %}
 {% block javascripts %}
 {{ parent() }}
+    <script src="{{ asset('js/pages/homepage.js') }}"></script>
 {% endblock %}
