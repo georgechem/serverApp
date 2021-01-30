@@ -3,7 +3,7 @@ function first(counter){
 
         let state = counter % i;
         if(state === 0){
-            return true;
+            return false;
         }
 
     }
