@@ -21,7 +21,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         mug02.style.color = `rgb(${255-rot+32},${255-rot+32},${255-rot+32})`;
 
         let mug_extra = document.createElement('i');
-        if (rot % 3 === 0){
+        if (rot % 4 === 0){
             coffee.appendChild(mug_extra);
         }
 

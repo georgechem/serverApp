@@ -3,13 +3,12 @@ function first(counter){
 
         let state = counter % i;
         if(state === 0){
-            return false;
+            return true;
         }
 
     }
     return true;
 
-    return (counter % 2) ? true : false;
 }
 
 
@@ -35,10 +34,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
         el.innerText = counter;
         el.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
         el. style.color = `rgb(${255-red}, ${255-green}, ${200})`;
-        el.style.minWidth = '70px';
+        el.style.width = '100px';
         //el.style.backgroundColor = 'white';
         buttonList.push(el);
-        (red > 0) ? red : factor = - factor;
+        (red > 0 && red < 255) ? red : factor = - factor;
         (green > 0) ? green : factor = - factor;
         (blue > 0) ? blue : factor = - factor;
 
