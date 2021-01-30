@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Index{% endblock %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/pages/o_auth.css') }}">
+
+{% endblock %}
+{% block body %}
+{% for book in books %}
+
+
+    {% if book.volumeInfo.imageLinks.thumbnail is defined %}
+        <img src="{{ book.volumeInfo.imageLinks.thumbnail }}">
+
+    {% endif %}
+    <p style="width:50px;display:inline;">{{ book.volumeInfo.title }}
+    </p>
+{% endfor %}
+
+{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('js/pages/o_auth.js') }}"></script>
+
+{% endblock %}

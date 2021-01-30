@@ -6,6 +6,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
+
 class PagesController extends AbstractController
 {
 
@@ -15,6 +16,34 @@ class PagesController extends AbstractController
     public function index():Response
     {
         return $this->render('pages/index.html.twig', []);
+    }
+
+    /**
+     * @Route("/oAuth", name="app_oAuth")
+     */
+    public function oAuth():Response
+    {
+        //echo "1",2+5, "pro".
+        //"end";
+
+        $client = new \Google\Client();
+        $path = $this->getParameter('kernel.project_dir');
+
+        $client->setAuthConfig($path.'/'.'credentials.json');
+        $client->setScopes(['https://www.googleapis.com/auth/books']);
+
+        $service = new \Google_Service_Books($client);
+        //dd($service->bookshelves_volumes);
+        $q = 'php';
+        $optParams = array(
+            'maxResults' => 40,
+
+        );
+        $results = $service->volumes->listVolumes($q, $optParams);
+
+        return $this->render('pages/o_auth.html.twig', [
+            'books' => $results,
+        ]);
     }
 
     /**

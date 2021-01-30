@@ -6,12 +6,12 @@
   color: #eef;
   cursor: pointer; }
   .fa-landmark:hover {
-    color: #113; }
+    color: #339; }
 
 .fa-times-circle {
   cursor: pointer;
   color: yellow;
-  margin: 20px auto;
+  margin: 5px auto 10px auto;
   font-size: 3rem; }
   .fa-times-circle:hover {
     color: red; }
@@ -22,7 +22,8 @@
 .menu {
   text-align: center;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  align-items: center; }
 
 .menuObject {
   background-color: #222;
@@ -31,13 +32,18 @@
   .menuObject__list {
     margin: 10px 15px 10px 30px; }
     .menuObject__list__item {
-      padding: 5px 0;
+      padding: 5px 20px;
       list-style: none; }
+      @media (min-width: 850px) {
+        .menuObject__list__item {
+          display: inline; } }
       .menuObject__list__item--link {
-        font-size: 2rem;
+        font-size: 1.5rem;
         color: #aaa;
         text-decoration: none;
         text-transform: uppercase; }
+        .menuObject__list__item--link:hover {
+          color: #88f; }
 
 .hidden {
   visibility: hidden;

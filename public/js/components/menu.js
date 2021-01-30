@@ -15,18 +15,14 @@ menuButton.addEventListener('click', function(){
 
 
 });
-
-let toggleClass = function(menuButton, menuObject){
-    //console.log(menuClose);
-    //menuButton.classList.toggle('hidden');
+// responsible for
+let toggleClass = function(menuButton,menuObject){
 
     let opacity = 1.0;
     animateOpacity(menuButton, opacity, menuObject);
 
-
-    //menuObject.classList.toggle('hidden');
-
 }
+// responsible for animating opacity property
 let animateOpacity = function(menuButton, opacity, menuObject){
 
     let id = setInterval(function(){
@@ -40,9 +36,9 @@ let animateOpacity = function(menuButton, opacity, menuObject){
         if(opacity < 0){
             menuButton.style.opacity = 1;
         }
-        opacity -= 0.05;
+        opacity -= 0.03;
 
-    }, 30);
+    }, 15);
 
 
 }
