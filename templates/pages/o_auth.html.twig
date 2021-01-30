@@ -14,7 +14,7 @@
         {% if book.volumeInfo.imageLinks.thumbnail is defined %}
         <div class="book__item">
         <img class="book__img" src="{{ book.volumeInfo.imageLinks.thumbnail }}">
-        <div class="book__title">{{ book.volumeInfo.title|slice(1,29) }}</div>
+        <div class="book__title">{{ book.volumeInfo.title|slice(0,29) }}</div>
         </div>
         {% endif %}
 
