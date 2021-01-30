@@ -7,16 +7,20 @@
 
 {% endblock %}
 {% block body %}
-{% for book in books %}
 
+    <div class="book">
+    {% for book in books %}
 
-    {% if book.volumeInfo.imageLinks.thumbnail is defined %}
-        <img src="{{ book.volumeInfo.imageLinks.thumbnail }}">
+        {% if book.volumeInfo.imageLinks.thumbnail is defined %}
+        <div class="book__item">
+        <img class="book__img" src="{{ book.volumeInfo.imageLinks.thumbnail }}">
+        <div class="book__title">{{ book.volumeInfo.title|slice(1,29) }}</div>
+        </div>
+        {% endif %}
 
-    {% endif %}
-    <p style="width:50px;display:inline;">{{ book.volumeInfo.title }}
-    </p>
-{% endfor %}
+    {% endfor %}
+    </div>
+
 
 {% endblock %}
 {% block javascripts %}

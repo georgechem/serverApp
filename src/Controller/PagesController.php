@@ -23,8 +23,6 @@ class PagesController extends AbstractController
      */
     public function oAuth():Response
     {
-        //echo "1",2+5, "pro".
-        //"end";
 
         $client = new \Google\Client();
         $path = $this->getParameter('kernel.project_dir');
@@ -36,6 +34,7 @@ class PagesController extends AbstractController
         //dd($service->bookshelves_volumes);
         $q = 'php';
         $optParams = array(
+            'startIndex' => 20,
             'maxResults' => 40,
 
         );
