@@ -15,8 +15,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
         rot = rot + 3;
         mug02.style.color = '#ddd';
-        mug02.style.fontsize = '35rem';
-        mug02.style.marginLeft = '160px';
+        mug02.style.fontsize = '25rem';
+        mug02.style.marginLeft = '20px';
         mug02.style.transform = `rotate(${finish+rot}deg)`;
         mug02.style.color = `rgb(${255-rot+32},${255-rot+32},${255-rot+32})`;
 

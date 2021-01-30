@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello PagesController!{% endblock %}
+{% block stylesheets %}
+{{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/pages/homepage.css') }}">
+{% endblock %}
+{% block body %}
+
+    <div id="coffee">
+
+    </div>
+    {% if true %}
+    <nav class="nav">
+        <a class="nav__link" href="{{ path('app_prime_numbers') }}">{{ links.apn.no }}. {{ links.apn.title }}</a>
+    </nav>
+    {% endif %}
+
+{% endblock %}
+{% block javascripts %}
+{{ parent() }}
+    <script src="{{ asset('js/pages/homepage.js') }}"></script>
+{% endblock %}

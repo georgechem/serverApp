@@ -8,22 +8,31 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class PagesController extends AbstractController
 {
+
     /**
-     * @Route("/", name="app_homepage")
+     * @Route("/", name="app_index")
      */
-    public function index(): Response
+    public function index():Response
+    {
+        return $this->render('pages/index.html.twig', []);
+    }
+
+    /**
+     * @Route("/homepage", name="app_homepage")
+     */
+    public function homepage(): Response
     {
         //return new Response("<p style=\"margin: 200px auto;text-align:center;color: #ff0000;font-size:16rem;
         //font-weight: bolder;\">404</p>");
 
         $menu['links'] = [
             'apn' => [
-                'no' => 'No. 1',
+                'no' => '1',
                 'title'=>'Prime Numbers'
             ]
         ];
 
-        return $this->render('pages/index.html.twig', [
+        return $this->render('pages/homepage.html.twig', [
             'links' => $menu['links'],
         ]);
     }

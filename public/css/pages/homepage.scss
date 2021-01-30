@@ -1,6 +1,7 @@
 body {
   background-color: #AAAAAA;
   max-width: 960px;
+  margin: 0 auto;
 }
 // Navigation
 .nav {
@@ -23,7 +24,7 @@ body {
 
 // Coffee
 #mug03{
-  font-size: 40rem;
+  font-size: 30rem;
   position: fixed;
   //color: green;
   z-index: -150;
@@ -32,11 +33,11 @@ body {
 #mug02{
   margin-top: 45px;
   margin-left: 5px;
-  font-size: 35rem;
+  font-size: 25rem;
   position: fixed;
   z-index: -100;
 }
 
 #coffee{
-  position: 33%;
+  //position: 33%;
 }
