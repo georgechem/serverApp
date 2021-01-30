@@ -20,6 +20,10 @@
     color: red;
   }
 }
+// Links styling
+.fa-calculator{
+  color: #5eb5e0;
+}
 // Menu Object styling
 .menu{
   text-align: center;
@@ -34,6 +38,7 @@
   &__list{
     margin: 10px 15px 10px 30px;
     &__item{
+      padding: 5px 0;
       list-style: none;
       &--link{
         font-size: 2rem;

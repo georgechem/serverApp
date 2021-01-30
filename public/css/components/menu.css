@@ -16,6 +16,9 @@
   .fa-times-circle:hover {
     color: red; }
 
+.fa-calculator {
+  color: #5eb5e0; }
+
 .menu {
   text-align: center;
   display: flex;
@@ -28,6 +31,7 @@
   .menuObject__list {
     margin: 10px 15px 10px 30px; }
     .menuObject__list__item {
+      padding: 5px 0;
       list-style: none; }
       .menuObject__list__item--link {
         font-size: 2rem;
