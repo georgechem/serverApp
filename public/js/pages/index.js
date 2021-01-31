@@ -23,7 +23,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 let prime_numbers = function(primeNumbersEvent){
     primeNumbersEvent.preventDefault();
-    let content = `<div class="content__box--content">When you close this window will be redirected to given address:</div>`;
+    let content = `<div class="content__box--content--text">When you close this window will be redirected to given address:</div>`;
     displayContent(this, content);
     let windowClose = document.getElementById('windowClose');
     windowClose.setAttribute('href',this.href);
@@ -32,7 +32,7 @@ let prime_numbers = function(primeNumbersEvent){
 }
 let o_auth = function(oAuthEvent){
     oAuthEvent.preventDefault();
-    let content = `<div class="content__box--content">When you close this window will be redirected to given address:</div>`;
+    let content = `<div class="content__box--content--text">When you close this window will be redirected to given address:</div>`;
     displayContent(this, content);
     let windowClose = document.getElementById('windowClose');
     windowClose.setAttribute('href', this.href);
