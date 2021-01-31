@@ -1,8 +1,32 @@
 .fa-bars {
   margin: 5px;
-  color: #ba7a1e;
+  color: #60441b;
   font-size: 3rem;
   transform: rotate(-90deg);
   cursor: pointer; }
+
+.menu {
+  position: relative;
+  width: 100%;
+  left: -100%;
+  top: 0;
+  background-color: #fff;
+  padding: 5px; }
+  @media (max-width: 300px) {
+    .menu {
+      left: -300px; } }
+  @media (max-width: 660px) {
+    .menu {
+      left: -660px; } }
+  .menu__list__item__link {
+    cursor: pointer;
+    color: #ddd; }
+
+.primary {
+  font-size: 1.5rem; }
+
+.hidden {
+  display: none;
+  visibility: hidden; }
 
 /*# sourceMappingURL=component1.css.map */
