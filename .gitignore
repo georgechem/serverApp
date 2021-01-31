@@ -16,3 +16,4 @@
 ###< symfony/phpunit-bridge ###
 #my
 /credentials.json
+/index.php
