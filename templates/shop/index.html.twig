@@ -4,11 +4,18 @@
 {% block stylesheets %}
 {{ parent() }}
     <link rel="stylesheet" href="{{ asset('css/shop/index/style1.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/shop/components/component1.css') }}">
 {% endblock %}
 {% block body %}
+<div class="container">
+    <nav id="nav" class="nav">
 
+    </nav>
+
+</div>
 {% endblock %}
 {% block javascripts %}
     {{ parent() }}
+    <script src="{{ asset('js/shop/components/component1.js') }}"></script>
     <script src="{{ asset('js/shop/index/javascript1.js') }}"></script>
 {% endblock %}
