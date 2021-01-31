@@ -19,6 +19,18 @@ class PagesController extends AbstractController
     }
 
     /**
+     * @Route("/test", name="app_test")
+     */
+    public function test():Response
+    {
+        //$value['data']=1;
+        $test = $value['data'] ?? "test";
+
+        //$test = 'o';
+        return new Response($test);
+    }
+
+    /**
      * @Route("/oAuth", name="app_oAuth")
      */
     public function oAuth():Response

@@ -22,13 +22,13 @@
                     <a class="menuObject__list__item--link" href="">Home</a>
                 </li>
                 <li class="menuObject__list__item">
-                    <a class="menuObject__list__item--link" href="{{ path('app_prime_numbers') }}">
+                    <a id="a_prime_numbers" class="menuObject__list__item--link" href="{{ path('app_prime_numbers') }}">
                         <i class="fas fa-calculator"></i>
                         Prime&nbspnumbers
                     </a>
                 </li>
                 <li class="menuObject__list__item">
-                    <a class="menuObject__list__item--link" href="{{ path('app_oAuth') }}">OAuth</a>
+                    <a id="o_auth" class="menuObject__list__item--link" href="{{ path('app_oAuth') }}">OAuth</a>
                 </li>
                 <li class="menuObject__list__item">
                     <a class="menuObject__list__item--link" href="">Page3</a>
@@ -36,10 +36,16 @@
                 <li class="menuObject__list__item">
                     <a class="menuObject__list__item--link" href="">Page4</a>
                 </li>
+                <li class="menuObject__list__item">
+                    <a class="menuObject__list__item--link" href="{{ path('app_test') }}">test</a>
+                </li>
 
             </ul>
         </div>
     </nav>
+    <div id="content" class="content">
+
+    </div>
 
 {% endblock %}
 {% block javascripts %}

@@ -7,14 +7,15 @@
         {% block stylesheets %}
             <link rel="stylesheet" href="{{ asset('css/main.css') }}">
         {% endblock %}
+        <script src="https://kit.fontawesome.com/c13354403e.js" crossorigin="anonymous"></script>
 
-        {% block javascripts %}
-            <script src="https://kit.fontawesome.com/c13354403e.js" crossorigin="anonymous"></script>
-            <script src="{{ asset('js/main.js') }}"></script>
-        {% endblock %}
     </head>
     <body>
         {% block body %}
+        {% endblock %}
+        {% block javascripts %}
+
+            <script src="{{ asset('js/main.js') }}"></script>
         {% endblock %}
     </body>
 </html>

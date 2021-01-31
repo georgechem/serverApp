@@ -8,7 +8,7 @@ body {
   align-items: center; }
   .book__item {
     padding: 3px;
-    border: 3px double #eee;
+    border: 3px groove #eee;
     background-color: #ccc;
     border-radius: 5px;
     max-width: 150px;

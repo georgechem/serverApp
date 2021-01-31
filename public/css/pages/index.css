@@ -1,4 +1,28 @@
 body {
   background-color: #396a7a; }
 
+.fa-sign-out-alt {
+  font-size: 2rem;
+  cursor: pointer; }
+
+.content {
+  margin: 20px auto;
+  max-width: 550px; }
+  @media (max-width: 600px) {
+    .content {
+      max-width: 320px; } }
+  .content__box {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #77AAff; }
+    .content__box--button {
+      text-align: right;
+      color: green; }
+    .content__box--content {
+      font-size: 1.2rem;
+      padding: 5px; }
+
 /*# sourceMappingURL=index.css.map */
