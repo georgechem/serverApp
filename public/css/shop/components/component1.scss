@@ -1,8 +1,8 @@
 // menu main button
 .fa-bars {
   margin: 5px;
-  color: #60441b;
-  font-size: 3rem;
+  color: #282523;
+  font-size: 2rem;
   transform: rotate(-90deg);
   cursor: pointer;
 
@@ -10,14 +10,21 @@
 // menu exit button
 .fa-times{
   color:white;
-  font-size: 2.5rem;
+  font-size: 2rem;
+  cursor: pointer;
 }
+// caret button
+.fa-caret-square-down{
+  color: white;
+  padding:5px;
+}
+// Menu styling
 $bp-mobile: 300px;
 $bp-tablet: 660px;
 .menu {
   display: flex;
   align-items: center;
-  position: relative;
+  position: absolute;
   width: 100%;
   left: -100%;
   @media (max-width: $bp-mobile){
@@ -43,10 +50,14 @@ $bp-tablet: 660px;
     padding-right: 10px;
   }
 }
-
+// font size for menu primary
 .primary {
   font-size: 1.5rem;
 }
+.secondary {
+  font-size: 1.2rem;
+}
+// to hide an element
 .hidden{
   display: none;
   visibility: hidden;
