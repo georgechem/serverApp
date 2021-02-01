@@ -31,7 +31,20 @@ mainMenuButton.addEventListener('click', function(){
     mainMenuButton.classList.toggle('hidden');
 
     link1.addEventListener('click', animateOpacity);
-})
+});
+// action - main button rotation
+mainMenuButton.addEventListener('mouseenter', function(){
+
+    TweenMax.to(mainMenuButton,.5,{rotation: 90});
+
+
+});
+// action - main button rotation back
+mainMenuButton.addEventListener('mouseleave', function(){
+
+    TweenMax.to(mainMenuButton,.5,{rotation: -90});
+
+});
 // action - close nav bar & show main menu button
 let mainMenuExitButtonHook = document.getElementById('exitMenuButton');
 mainMenuExitButtonHook.addEventListener('click', function(){
