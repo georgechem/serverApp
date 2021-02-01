@@ -12,11 +12,12 @@
 
 .fa-caret-square-down {
   color: white;
-  padding: 5px; }
+  padding-left: 10px;
+  cursor: pointer; }
 
 .menu {
   display: flex;
-  align-items: center;
+  align-items: start;
   position: absolute;
   width: 100%;
   left: -100%;
