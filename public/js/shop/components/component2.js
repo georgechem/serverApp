@@ -1,3 +1,4 @@
+
 /**
  * Elements read from DOM
  * @type {HTMLElement}
@@ -34,6 +35,12 @@ mainMenuButton.addEventListener('click', function(){
 });
 // close main menu
 mainMenuExitButton.addEventListener('click', function(){
+    /**
+     * Perform reverse animations of all links
+     * except clicked one
+     */
+    TweenMax.to(content, 1, {opacity: 0});
+    TweenMax.to(section1, 1, {opacity: 0});
     // animate closing menu
     TweenMax.to(menu, 1, {left:'-100%', backgroundColor: '#dddddd'});
     // hide all submenus
@@ -48,11 +55,21 @@ caret1.addEventListener('click', function(){
     // all links in submenu should be hidden
     submenu1.classList.toggle('hidden');
     submenu2.classList.toggle('hidden');
+    // add extra animation to Fonts
+    TweenMax.to(link1, 1, {fontSize: '2rem'});
+    TweenMax.to(link2, 1, {fontSize: '2rem'});
 });
 // handle link1_1 from sub menu
 link1.addEventListener('click', function(){
     // show content which relates to link
     content.classList.remove('hidden');
+    /**
+     * add extra animation to opacity
+     * need to remember to add reversed action to evey
+     * place where it will be hidden as content
+     */
+    TweenMax.to(content, 1, {opacity: 1});
+    TweenMax.to(section1, 1, {opacity: 0});
     // close all submenus because user clicked
     submenu1.classList.toggle('hidden');
     submenu2.classList.toggle('hidden');
@@ -61,6 +78,13 @@ link1.addEventListener('click', function(){
 });
 // handle link1_2 from sub menu
 link2.addEventListener('click', function(){
+    /**
+     * Perform reverse animations of all links
+     * except clicked one
+     */
+    TweenMax.to(content, 1, {opacity: 0});
+    // Added extra animation for opacity for this link(section1)
+    TweenMax.to(section1, 1, {opacity: 1});
     // show section 1 which relates to clicked link
     section1.classList.remove('hidden');
     // close all submenus because user clicked
@@ -68,4 +92,5 @@ link2.addEventListener('click', function(){
     submenu2.classList.toggle('hidden');
     // if any content not hidden hide it
     content.classList.add('hidden');
+
 });
