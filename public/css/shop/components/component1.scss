@@ -25,7 +25,7 @@ $bp-tablet: 660px;
 .menu {
   display: flex;
   align-items: start;
-  position: absolute;
+  position: fixed;
   width: 100%;
   left: -100%;
   @media (max-width: $bp-mobile){
@@ -39,6 +39,7 @@ $bp-tablet: 660px;
   padding: 5px;
   &__list{
     &__item{
+
       &__link{
         cursor: pointer;
         color: #ddd;
@@ -53,13 +54,20 @@ $bp-tablet: 660px;
 }
 // font size for menu primary
 .primary {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 .secondary {
-  font-size: 1.2rem;
+  font-size: 2rem;
+  font-family: Gabriola, serif;
+
 }
 // to hide an element
 .hidden{
   display: none;
   visibility: hidden;
+}
+.submenu {
+  text-align: center;
+  background-color: #111111;
+  padding: 5px 0;
 }

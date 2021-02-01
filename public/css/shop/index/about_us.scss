@@ -1,0 +1,44 @@
+$bp-mobile: 360px;
+
+.content{
+  opacity: 1;
+  margin: 40px auto 20px auto;
+  text-align: center;
+  width: 75%;
+  @media(max-width: $bp-mobile){
+   width:95%
+  }
+  //border: 1px solid black;
+    &__img{
+      background-image: url('/img/svg/shop/PaperSheet.svg');
+      background-repeat: no-repeat;
+      min-height: 200px;
+      background-size: cover;
+    }
+  }
+
+.text{
+  &__title{
+    padding-top: 20px;
+    font-family: Gabriola, serif;
+    font-size: 2rem;
+  }
+  &__content{
+    padding:2.5px 25px;
+    font-family: Gabriola, serif;
+    font-size: 1.2rem;
+  }
+  &__sign{
+    font-family: "Comic Sans MS", serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    text-align: right;
+    padding: 10px 30px;
+  }
+  &__line{
+    margin: 0 auto;
+    width:90%;
+    border-bottom: 3px double black;
+  }
+
+}

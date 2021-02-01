@@ -3,7 +3,8 @@
 {% block title %}Shop Index{% endblock %}
 {% block stylesheets %}
 {{ parent() }}
-    <link rel="stylesheet" href="{{ asset('css/shop/index/style1.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/shop/index/about_us.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/shop/index/explore_offer1.css') }}">
     <link rel="stylesheet" href="{{ asset('css/shop/components/component1.css') }}">
 {% endblock %}
 {% block body %}
@@ -13,18 +14,12 @@
             <i id="mainMenuButton" class="fas fa-bars"></i>
         </div>
         <div id="menu" class="menu">
-            <ul class="menu__list">
-                <li class="menu__list__item">
+            <div class="menu__list">
+                <div class="menu__list__item">
                     <a class="menu__list__item__link primary">HOME</a>
-                    <ul id="submenu1" class="menu__list hidden">
-                        <li class="menu__list__item">
-                            <a class="menu__list__item__link secondary">
-                                link 1_1
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
+                </div>
+            </div>
+
             <span class="primary">
                 <i id="caret1" class="far fa-caret-square-down"></i>
             </span>
@@ -32,13 +27,45 @@
                 <i id="exitMenuButton" class="fas fa-times"></i>
             </div>
         </div>
-
+        <div id="submenu1" class="menu__list hidden">
+            <div class="menu__list__item submenu">
+                <a id="link1_1" class="menu__list__item__link secondary">
+                    About Us
+                </a>
+            </div>
+        </div>
+        <div id="submenu2" class="menu__list hidden">
+            <div class="menu__list__item submenu">
+                <a id="link1_2" class="menu__list__item__link secondary">
+                    Explore Our offer
+                </a>
+            </div>
+        </div>
     </nav>
+    <div id="content" class="content hidden">
+
+        <div id="contentImage" class="content__img">
+        <div id="contentText" class="text"></div>
+           <p class="text__title">Why we are here ?</p>
+            <p class="text__content">
+                Nullam vestibulum consectetur felis non molestie. Ut id nisl varius, semper lectus a, dapibus nibh. Aliquam sed ultricies est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ullamcorper ante a aliquam convallis. Phasellus ornare ut dolor ac ultricies. Nulla varius arcu ac quam pretium, vitae blandit sem consectetur. Mauris consequat rutrum lacus sed blandit. Sed porta accumsan nisl sit amet dignissim. Aliquam cursus eu risus et congue. Sed ac lacus orci. Aenean volutpat faucibus hendrerit. Nulla a imperdiet purus.
+            </p>
+            <p class="text__line"></p>
+            <p class="text__sign">Pompius Iglecias A.D. 1501</p>
+
+        </div>
+    </div>
+    <section id="section1">
+        <div class="card">
+            content
+        </div>
+
+    </section>
 
 </div>
 {% endblock %}
 {% block javascripts %}
     {{ parent() }}
     <script src="{{ asset('js/shop/components/component1.js') }}"></script>
-    <script src="{{ asset('js/shop/index/javascript1.js') }}"></script>
+    <script src="{{ asset('js/shop/index/explore_offer1.js') }}"></script>
 {% endblock %}
