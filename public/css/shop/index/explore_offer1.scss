@@ -1,0 +1,49 @@
+.card{
+  //position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  &__box{
+    cursor: pointer;
+    max-width: 260px;
+    margin: 10px;
+    padding: 15px 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #d3bc5f;
+    &__img{
+      width: 200px;
+    }
+  }
+
+
+
+}
+.productText{
+  &__title{
+    text-align: center;
+    padding-top: 20px;
+    font-family: Gabriola, serif;
+    font-size: 2rem;
+  }
+  &__content{
+    margin: 0;
+    padding:1px 10px;
+    font-family: Gabriola, serif;
+    font-size: 1.1rem;
+  }
+  &__sign{
+    font-family: "Comic Sans MS", serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    text-align: right;
+    padding: 10px 30px;
+  }
+  &__line{
+    margin: 0 auto;
+    width:90%;
+    border-bottom: 3px double black;
+  }
+
+}

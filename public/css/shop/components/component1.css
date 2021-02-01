@@ -46,8 +46,8 @@
   font-family: Gabriola, serif; }
 
 .hidden {
-  display: none;
-  visibility: hidden; }
+  visibility: hidden;
+  display: none; }
 
 .submenu {
   text-align: center;

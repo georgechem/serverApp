@@ -55,9 +55,44 @@
 
         </div>
     </div>
-    <section id="section1">
+    <section id="section1" class="hidden">
         <div class="card">
-            content
+            <div class="card__box">
+                <img class="card__box__img" src="{{ asset('img/svg/shop/lockedbook.svg') }}" alt="image of the book">
+                <div class="card__box__body">
+                    <p class="productText__title">Name of the product</p>
+                    <p class="productText__content">Praesent quis iaculis nunc. Aliquam erat volutpat. In facilisis dignissim massa. Vestibulum et arcu orci. Praesent a nulla dignissim enim blandit accumsan. Ut imperdiet imperdiet est, non tempus libero aliquam vel. Sed purus tellus, feugiat.</p>
+                </div>
+            </div>
+            <div class="card__box">
+                <img class="card__box__img" src="{{ asset('img/svg/shop/manbookframe.svg') }}" alt="image of the book">
+                <div class="card__box__body">
+                    <p class="productText__title">One of Us</p>
+                    <p class="productText__content">Praesent quis iaculis nunc. Aliquam erat volutpat. In facilisis dignissim massa. Vestibulum et arcu orci. Praesent a nulla dignissim enim blandit accumsan. Ut imperdiet imperdiet est, non tempus libero aliquam vel. Sed purus tellus, feugiat.</p>
+                </div>
+            </div>
+            <div class="card__box">
+                <img class="card__box__img" src="{{ asset('img/svg/shop/openbook.svg') }}" alt="image of the book">
+                <div class="card__box__body">
+                    <p class="productText__title">Bozia is Here</p>
+                    <p class="productText__content">Praesent quis iaculis nunc. Aliquam erat volutpat. In facilisis dignissim massa. Vestibulum et arcu orci. Praesent a nulla dignissim enim blandit accumsan. Ut imperdiet imperdiet est, non tempus libero aliquam vel. Sed purus tellus, feugiat.</p>
+                </div>
+            </div>
+            <div class="card__box">
+                <img class="card__box__img" src="{{ asset('img/svg/shop/ecibook.svg') }}" alt="image of the book">
+                <div class="card__box__body">
+                    <p class="productText__title">Test of the Day</p>
+                    <p class="productText__content">Praesent quis iaculis nunc. Aliquam erat volutpat. In facilisis dignissim massa. Vestibulum et arcu orci. Praesent a nulla dignissim enim blandit accumsan. Ut imperdiet imperdiet est, non tempus libero aliquam vel. Sed purus tellus, feugiat.</p>
+                </div>
+            </div>
+            <div class="card__box">
+                <img class="card__box__img" src="{{ asset('img/svg/shop/BookWithBookmarks.svg') }}" alt="image of the book">
+                <div class="card__box__body">
+                    <p class="productText__title">Pompius Ignacius said</p>
+                    <p class="productText__content">Praesent quis iaculis nunc. Aliquam erat volutpat. In facilisis dignissim massa. Vestibulum et arcu orci. Praesent a nulla dignissim enim blandit accumsan. Ut imperdiet imperdiet est, non tempus libero aliquam vel. Sed purus tellus, feugiat.</p>
+                </div>
+            </div>
+
         </div>
 
     </section>
@@ -66,6 +101,6 @@
 {% endblock %}
 {% block javascripts %}
     {{ parent() }}
-    <script src="{{ asset('js/shop/components/component1.js') }}"></script>
+    <script src="{{ asset('js/shop/components/component2.js') }}"></script>
     <script src="{{ asset('js/shop/index/explore_offer1.js') }}"></script>
 {% endblock %}

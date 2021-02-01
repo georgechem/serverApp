@@ -1,3 +1,38 @@
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center; }
+  .card__box {
+    cursor: pointer;
+    max-width: 260px;
+    margin: 10px;
+    padding: 15px 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #d3bc5f; }
+    .card__box__img {
+      width: 200px; }
 
+.productText__title {
+  text-align: center;
+  padding-top: 20px;
+  font-family: Gabriola, serif;
+  font-size: 2rem; }
+.productText__content {
+  margin: 0;
+  padding: 1px 10px;
+  font-family: Gabriola, serif;
+  font-size: 1.1rem; }
+.productText__sign {
+  font-family: "Comic Sans MS", serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  text-align: right;
+  padding: 10px 30px; }
+.productText__line {
+  margin: 0 auto;
+  width: 90%;
+  border-bottom: 3px double black; }
 
 /*# sourceMappingURL=explore_offer1.css.map */
