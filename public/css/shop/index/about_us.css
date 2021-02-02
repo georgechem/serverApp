@@ -7,7 +7,7 @@
     .content {
       width: 95%; } }
   .content__img {
-    background-image: url("/img/svg/shop/PaperSheet.svg");
+    background-image: url("img/svg/shop/PaperSheet.svg");
     background-repeat: no-repeat;
     min-height: 200px;
     background-size: cover; }
