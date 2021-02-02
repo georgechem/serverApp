@@ -10,7 +10,8 @@ $bp-mobile: 360px;
   }
   //border: 1px solid black;
     &__img{
-      background-image: url('img/svg/shop/PaperSheet.svg');
+      background-image: url('https://www.serverapp.eu/public/index.php/img/svg/shop/PaperSheet.svg');
+      //background-image: url('/img/svg/shop/PaperSheet.svg');
       background-repeat: no-repeat;
       min-height: 200px;
       background-size: cover;
